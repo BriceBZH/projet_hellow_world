@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	color : #333;
+	/* font-family: lato */
+	line-height: 1.5;
+}
+h1 {
+	font-size: 45px; /*rem*/
+	color: #007eb3;
+	word-spacing: 10px; /*rem*/
+	border-bottom: dashed black 1px;
+	font-weight: normal;
+}
+h2 {
+	font-size: 30px; /*rem*/
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h3 {
+	font-size: 25px; /*rem*/
+	font-weight: normal;
+}
+
+/**************** header **************/
+.header {
+	text-align: center;
+}
+.nav {
+	background-color: #007eb3;
+}
+.header a {
+	margin-left:30px;
+	color: white;
+	text-decoration: none;
+}
+/*************** container ****************/
+.container {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container a {
+	text-decoration: none;
+	color: #007eb3;
+}
+.container section {
+	margin-top: 30px; /*rem*/
+	margin-bottom: 30px; /*rem*/
+}
+article + article {
+	border-top: 1px solid black;
+}
+/****************** footer ****************/
+.footer {
+	text-align: center;
+	background-color: #007eb3;
+	color: white;
+}
+/****************** derniers voyages ************/
+.ocre {
+	color: #CD8C56;
+}
+.red {
+	color: #F00;
+}
+.derniers_voyages .img {
+	max-width: 49%;
+}
+.more {
+	background-color: #007eb3;
+	border-radius: 6px;
+	color: white;
+}
+/****************** a propos ************/
+.a_propos {
+	background-image: url(../img/fond.jpg);
+	background-size: contain;
+}
+.a_propos article {
+	width: 50%;
+}
+/****************** contact ************/
+.fa-facebook-square {
+	color: #4267B2;
+}
+.fa-square-twitter {
+	color: #1da1f2;
+}
+.fa-pinterest-square {
+	color: #bd081c;
+}
+.fa-square-instagram {
+	color: #8948C1;
+}
+.formulaire {
+	background-image: url(../img/map-image.png);
+	background-size: contain;
+	
+}
