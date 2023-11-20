@@ -1,176 +1,262 @@
-html {
-	font-size: 62.5%;	
-}
-body {
-	font-size: 1.6rem;
-	margin: 0;
-	color : #333;
-	font-family: 'Lato', sans-serif;
-	line-height: 1.5;
-}
-h1 {
-	font-size: 4.5rem;
-	color: #007eb3;
-	word-spacing: 10px;
-	border-bottom: dashed #007eb3 1px;
-	font-weight: normal;
-}
-h2 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	font-weight: normal;
-}
-h3 {
-	font-size: 2.5rem;
-	font-weight: normal;
+body * {
+  box-sizing: border-box;
 }
 
-/**************** header **************/
-.header {
-	text-align: center;
+html {
+  font-size: 62.5%;
 }
-.nav {
-	background-color: #007eb3;
-	display: flex;
-	justify-content: space-evenly;
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  margin: 0;
 }
-.header a {
-	color: white;
-	text-decoration: none;
-}
-/*************** container ****************/
+
 .container {
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 900px;
+  margin: 0 auto;
 }
-.container a {
-	text-decoration: none;
+
+a {
+  color: #007eb3;
+  text-decoration: none;
 }
-.container section {
-	margin-top: 30px; 
-	margin-bottom: 30px;
+
+h1, h2, h3 {
+  font-weight: normal;
+  line-height: 1.5em;
 }
-article + article {
-	border-top: 1px solid #ddd;
+
+h1 {
+  color: #007eb3;
+  text-align: center;
+  font-size: 4.5rem;
+  word-spacing: 10px;
+  border-bottom: 1px dotted;
 }
-/****************** footer ****************/
-.footer {
-	text-align: center;
-	background-color: #007eb3;
-	color: white;
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
-.footer a {
-	color: white;
+
+h3 {
+  font-size: 2.5rem;
 }
-/****************** derniers voyages ************/
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header nav {
+  background-color: #007eb3;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav li {
+  width: 20%;
+}
+
+header nav a {
+  color: #FFF;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.7em 1em;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 2%;
+}
+
+.img-right {
+  float: right;
+  margin-left: 2%;
+}
+
+.clear {
+  clear: both;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid;
+}
+
+.rouge {
+  color: #F00;
+}
+
 .ocre {
-	color: #CD8C56;
+  color: #CD8C56;
 }
-.red {
-	color: #F00;
+
+a.readmore {
+  background-color: #007eb3;
+  color: #FFF;
+  padding: 0.5em 1em;
+  border-radius: 6px;
 }
-.derniers_voyages .img {
-	max-width: 49%;
-	margin:1em;
+
+#carnets article {
+  margin-bottom: 2.5rem;
 }
-.more {
-	background-color: #007eb3;
-	border-radius: 6px;
-	color: white;
-	padding: 0.5em;
+
+#carnets article img {
+  max-width: 49%;
 }
-.bloc_vienne {
-	display: flex;
+
+#apropos {
+  background-image: url('../img/fond.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 4em 0;
 }
-.bloc_marra {
-	display: flex;
+
+#apropos article {
+  background-color: #FFF;
+  width: 50%;
+  padding: 2%;
+  box-sizing: border-box;
 }
-.table {
+
+table {
   width: 100%;
-  border-collapse : collapse;
+  border-collapse: collapse;
 }
-/* table */
-.table tbody tr:nth-child(odd) {
-  background-color: #eee;
+
+tr:nth-child(even) {
+  background-color: #EEE;
 }
-.table tbody tr:nth-child(even) {
-  background-color: #fff;
-}
-td, th {
-  border: 1px solid #ddd;
+
+th, td {
+  border: 1px solid #CCC;
   padding: 1em;
 }
-th {
+
+/* *****************************************************************
+FORM
+***************************************************************** */
+
+form {
+  background-color: #444;
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 48%;
+}
+
+/* Style pour une barre d'outils => ou placer les boutons */
+.toolbar {
+	padding: 1em 2em;
+	text-align: center;
+}
+
+/* Style de chaque ligne (field) */
+input {
+	margin-bottom: 1em;
+}
+
+/* Style de chaque libélé */
+label {
+  display: block;
+}
+
+/* Style de chaque input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	display: block;
+  width: 100%;
+	padding: 0.65em 1em;
+	font-size: 1.6rem;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+}
+textarea {
+	width: 100%;
+	min-height: 10em;
+}
+
+/* Style de chaque bouton */
+.button {
+	display: inline-block;
+	padding: 0.8em 2em;
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #007eb3;
+	border: 2px solid #007eb3;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: #007eb3;
 	background-color: #fff;
 }
-/****************** a propos ************/
-.a_propos {
-	background-image: url(../img/fond.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 45em;
-	display: flex;
-	width: 100%;
+
+.fa-brands {
+  font-size: 3rem;
 }
-.article_a_propos {
-	background-color:white;
-	width: 20%; /*50%*/
-	margin:3em;
-	padding: 1em;
+
+.fa-square-facebook {
+  color: #4267B2;
 }
-/****************** contact ************/
-.fa-facebook-square {
-	color: #4267B2;
-}
+
 .fa-square-twitter {
-	color: #1da1f2;
+  color: #1da1f2;
 }
-.fa-pinterest-square {
-	color: #bd081c;
+
+.fa-square-pinterest {
+  color: #bd081c;
 }
+
 .fa-square-instagram {
-	color: #8948C1;
+  color: #b900b4;
 }
-.formulaire {
-	background-image: url(../img/map-image.png);
-	opacity: 0.75;
-	background-color: black;
-	background-size: cover;
-	max-width: 100%;
-	min-height: auto;
+
+footer {
+  text-align: center;
+  background-color: #007eb3;
+  color: #FFF;
+  padding: 1em 2em;
 }
-.block {
-	display: flex;
-	flex-direction:row;
+
+footer a {
+  color: #FFF;
+  text-decoration: underline;
 }
-.gauche{
-	display: flex;
-	flex-direction:column;
-	width: 50%;
-	margin: 0.5em;
-}
-.droite{
-	display: flex;
-	width: 50%;
-	margin: 0.5em;
-}
-.but {
-	display: flex;
-	justify-content: center;
-}
-.button {
-	display: flex;
-	align-self: center;
-	align-content: center;
-}
-textarea, input, button {
-	border-radius: 6px;
-	margin: 0.5em;
-}
-button {
-	background-color: #007eb3;
-	color: white;
-	padding: 0.5em;
-	border:0;
+
+footer img {
+  width: 60px;
 }
