@@ -1,23 +1,27 @@
+html {
+	font-size: 62.5%;	
+}
 body {
+	font-size: 1.6rem;
 	margin: 0;
 	color : #333;
-	/* font-family: lato */
+	font-family: lato;
 	line-height: 1.5;
 }
 h1 {
-	font-size: 45px; /*rem*/
+	font-size: 4.5rem;
 	color: #007eb3;
 	word-spacing: 10px; /*rem*/
-	border-bottom: dashed black 1px;
+	border-bottom: dashed #007eb3 1px;
 	font-weight: normal;
 }
 h2 {
-	font-size: 30px; /*rem*/
+	font-size: 3rem;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 h3 {
-	font-size: 25px; /*rem*/
+	font-size: 2.5rem;
 	font-weight: normal;
 }
 
@@ -27,9 +31,10 @@ h3 {
 }
 .nav {
 	background-color: #007eb3;
+	display: flex;
+	justify-content: space-evenly;
 }
 .header a {
-	margin-left:30px;
 	color: white;
 	text-decoration: none;
 }
@@ -41,7 +46,7 @@ h3 {
 }
 .container a {
 	text-decoration: none;
-	color: #007eb3;
+	/*color: #007eb3;*/
 }
 .container section {
 	margin-top: 30px; /*rem*/
@@ -56,6 +61,9 @@ article + article {
 	background-color: #007eb3;
 	color: white;
 }
+.footer a {
+	color: white;
+}
 /****************** derniers voyages ************/
 .ocre {
 	color: #CD8C56;
@@ -65,19 +73,61 @@ article + article {
 }
 .derniers_voyages .img {
 	max-width: 49%;
+	margin:1em;
 }
 .more {
 	background-color: #007eb3;
 	border-radius: 6px;
 	color: white;
+	padding: 0.5em;
+	width: 30%;
+}
+.bloc_vienne {
+	display: flex;
+}
+.bloc_texte_vienne {
+	display: flex;
+	flex-direction: column;
+}
+.bloc_marra {
+	display: flex;
+}
+.bloc_texte_marra {
+	display: flex;
+	flex-direction: column;
+}
+.table {
+  width: 100%;
+  border-collapse : collapse;
+}
+/* table */
+.table tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 1em;
+}
+th {
+	background-color: #fff;
 }
 /****************** a propos ************/
 .a_propos {
 	background-image: url(../img/fond.jpg);
-	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 45em;
+	display: flex;
+	width: 100%;
 }
-.a_propos article {
-	width: 50%;
+.article_a_propos {
+	background-color:white;
+	width: 20%; /*50%*/
+	margin:3em;
+	padding: 1em;
 }
 /****************** contact ************/
 .fa-facebook-square {
@@ -94,6 +144,34 @@ article + article {
 }
 .formulaire {
 	background-image: url(../img/map-image.png);
-	background-size: contain;
-	
+	background-color: black;
+	display: flex;
+	max-width: 100%;
+	min-height: auto;
+	flex-wrap: wrap;
+}
+.gauche {
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	width: 50%;
+}
+.droite {
+	display: flex;
+	width: 40%;
+	margin: 1em;
+}
+.button {
+	display: flex;
+	align-self: center;
+	align-content: center;
+}
+textarea, input, button {
+	border-radius: 6px;
+	margin: 0.5em;
+}
+button {
+	background-color: #007eb3;
+	color: white;
+	padding: 0.5em;
 }
