@@ -5,13 +5,13 @@ body {
 	font-size: 1.6rem;
 	margin: 0;
 	color : #333;
-	font-family: lato;
+	font-family: 'Lato', sans-serif;
 	line-height: 1.5;
 }
 h1 {
 	font-size: 4.5rem;
 	color: #007eb3;
-	word-spacing: 10px; /*rem*/
+	word-spacing: 10px;
 	border-bottom: dashed #007eb3 1px;
 	font-weight: normal;
 }
@@ -46,14 +46,13 @@ h3 {
 }
 .container a {
 	text-decoration: none;
-	/*color: #007eb3;*/
 }
 .container section {
-	margin-top: 30px; /*rem*/
-	margin-bottom: 30px; /*rem*/
+	margin-top: 30px; 
+	margin-bottom: 30px;
 }
 article + article {
-	border-top: 1px solid black;
+	border-top: 1px solid #ddd;
 }
 /****************** footer ****************/
 .footer {
@@ -80,21 +79,12 @@ article + article {
 	border-radius: 6px;
 	color: white;
 	padding: 0.5em;
-	width: 30%;
 }
 .bloc_vienne {
 	display: flex;
 }
-.bloc_texte_vienne {
-	display: flex;
-	flex-direction: column;
-}
 .bloc_marra {
 	display: flex;
-}
-.bloc_texte_marra {
-	display: flex;
-	flex-direction: column;
 }
 .table {
   width: 100%;
@@ -144,22 +134,30 @@ th {
 }
 .formulaire {
 	background-image: url(../img/map-image.png);
+	opacity: 0.75;
 	background-color: black;
-	display: flex;
+	background-size: cover;
 	max-width: 100%;
 	min-height: auto;
-	flex-wrap: wrap;
 }
-.gauche {
+.block {
 	display: flex;
-	flex-direction: column;
-	margin: 1em;
+	flex-direction:row;
+}
+.gauche{
+	display: flex;
+	flex-direction:column;
 	width: 50%;
+	margin: 0.5em;
 }
-.droite {
+.droite{
 	display: flex;
-	width: 40%;
-	margin: 1em;
+	width: 50%;
+	margin: 0.5em;
+}
+.but {
+	display: flex;
+	justify-content: center;
 }
 .button {
 	display: flex;
@@ -174,4 +172,5 @@ button {
 	background-color: #007eb3;
 	color: white;
 	padding: 0.5em;
+	border:0;
 }
